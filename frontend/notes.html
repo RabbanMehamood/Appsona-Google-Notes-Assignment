@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <div id="notesList">
+          <h2>Your Notes</h2>
+          <!-- Example note cards will be inserted here -->
+        </div>
+        <div
+          style="
+            padding: 50px;
+            margin: 15px;
+            border-radius: 4%;
+            background-color: burlywood;
+          "
+        >
+          <h2>Create Note</h2>
+          <form id="createNoteForm">
+            <div>
+              <label for="noteTitle">Title</label>
+              <input type="text" id="noteTitle" required />
+            </div>
+            <div>
+              <label for="noteContent">Content</label>
+              <textarea id="noteContent" rows="3" required></textarea>
+            </div>
+            <div>
+              <label for="noteColor">Background Color</label>
+              <input type="color" id="noteColor" />
+            </div>
+            <div>
+              <label for="noteTag">Tags</label>
+              <input type="text" id="noteTag" placeholder="Comma-separated" />
+            </div>
+            <button type="submit">Create Note</button>
+          </form>
+          <button id="logoutButton">Logout</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/notes.js"></script>
+  </body>
+</html>
